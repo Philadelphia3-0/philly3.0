@@ -10,6 +10,7 @@ ftp://ftp.phila-records.com/Year-to-Date Transaction Files/
 import numpy as np
 import pandas as pd
 
+
 def filter_amends(df):
     """
     df is a ytd data frame including amended reports.
@@ -39,3 +40,4 @@ def filter_amends(df):
                 #print "not amended"
                 indices_to_keep=np.append(indices_to_keep,dfcf.index)
     return indices_to_keep
+
